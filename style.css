@@ -165,17 +165,20 @@ body {
 
 .hero-portrait {
   display: flex; flex-direction: column; gap: 20px;
+  max-width: 420px;
+  margin-left: auto;
 }
 .portrait-frame {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 5 / 4;
   overflow: hidden;
   border: 1px solid var(--line);
+  background: var(--cb-cream);
 }
 .portrait-frame img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(0.15);
+  object-position: center top;
 }
 .portrait-tag {
   position: absolute; top: 12px; right: 12px;
@@ -358,12 +361,14 @@ body {
 }
 .about-image {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 5 / 4;
   overflow: hidden;
   border: 1px solid rgba(169, 131, 83, 0.4);
+  max-width: 380px;
+  background: var(--cb-navy-deep);
 }
 .about-image img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
 }
 .about-text .kicker { color: var(--cb-gold-light); }
 .about-text h2 { color: var(--cb-cream); }
